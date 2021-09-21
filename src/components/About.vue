@@ -1,6 +1,22 @@
 <template>
   <div>
-    <p>About</p>
+    <h3>Creative Perspective</h3>
+    <p>Our team develops with a focus on new ideas that are amorphous and ever evolving.
+      We focus our talents to help you develop and maintain creative business solutions
+      by pushing the limits of modern technology
+    </p>
+
+    <p>We pride ourselves on taking leaps and meeting big dreamers in the middle with cutting edge code and open minds</p>
+    
+    <h3>Our Team</h3>
+
+    <ul>
+      <li>UI Designers</li>
+      <li>Web Developers</li>
+      <li>Mobile Developers</li>
+      <li>Serverside Developers</li>
+    </ul>
+
   </div>
 </template>
 

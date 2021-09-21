@@ -7,16 +7,27 @@
       <div id="contentBody">
       <p>Emberspring offers custom development platforms and scalable services
          to suit the needs of your custom applications</p>
-        
+      
+      <div class="flexed">
       <h5>Web Apps</h5>
-      <p>Fully responsive front end applications utilizing the latest in web technology</p>
+      <img src="../assets/vue.svg" height="50px" width="50px"/>
+      <img src="../assets/react.svg" height="50px" width="50px"/>
+      <img src="../assets/Angular.svg" height="50px" width="50px"/>
+      </div>
+        <p>Fully responsive mobile first front end applications utilizing the latest in web technology</p>
+      
 
+      <div class="flexed">
       <h5>Mobile Applications</h5>
-      <p>Put your starup in your pocket with IOS and Android supported apps</p>
       <img src="../assets/iphone.svg" height="50px" width="50px"/>
-
+      </div>
+        <p>Put your starup in your pocket with IOS and Android supported apps</p>
+     
+      <div class="flexed">
       <h5>Api Development</h5>
-      <p>Original Ideas need data, we design pull, and analyze datasets to perform calculations that help you make business decisions faster than the competition</p>
+      <img src="../assets/iphone.svg" height="50px" width="50px"/>
+      </div>
+        <p>Original Ideas need data, we design pull, and analyze datasets to perform calculations that help you make business decisions faster than the competition</p>
       </div>
     </div>
       
@@ -50,5 +61,12 @@ a {
 }
 #contentBody{
   margin-top: 2em;
+}
+.flexed{
+  display: flex;
+}
+.flexed h5{
+justify-content: left;
+text-align: left;
 }
 </style>
