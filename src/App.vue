@@ -2,12 +2,14 @@
   <div id="app">
 
     <div id="topGrid">
-      <div>
+      <div id="topbarLeft">
+        <div>
         <h3 id="emberspringtext">Emberspring</h3>
         <img id="logo" alt="logo" src="./assets/logofinal.png">
+        </div>
       </div>
 
-      <div>
+      <div id="topbarRight">
       <section id="topbar" :class="section.id === toggled && 'toggleSectionActive'" v-for="section in sections" :key="section.id" @click="toggleStep(section.id)">
                 <h2>{{section.name}}</h2>
       </section>
@@ -20,7 +22,7 @@
       <div id="mainbodycol1">
         <div v-if="toggled == 0"><Home/></div>
         <div v-if="toggled == 1"><Services/></div>
-        <div v-if="toggled == 2"><Designs/></div>
+        <div v-if="toggled == 2"><Wireframes/></div>
         <div v-if="toggled == 3"><About/></div>
         <div v-if="toggled == 4"><Contact/></div>
         <div v-if="toggled == 1" id="packages">
@@ -41,6 +43,7 @@ import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Services from './components/Services.vue'
 import Contact from './components/Contact.vue'
+import Wireframes from './components/Wireframes.vue'
 
 
 export default {
@@ -49,7 +52,8 @@ export default {
     Home,
     Services,
     About,
-    Contact
+    Contact,
+    Wireframes
   },
   data:function(){
     return{
@@ -57,8 +61,9 @@ export default {
       sections: [
         {id: 0, name: 'Home', desc: 'home'},
         {id: 1, name: 'Services', desc: 'services'},
-        {id: 2, name: 'About', desc: 'about'},
-        {id: 3, name: 'Contact', desc: 'contact'}
+        {id: 2, name: 'Wireframes', desc: 'wireframes'},
+        {id: 3, name: 'About', desc: 'about'},
+        {id: 4, name: 'Contact', desc: 'contact'}
       ],
     }
   },
@@ -98,7 +103,18 @@ export default {
 }
 #topGrid{
   display: grid;
-  grid-template-columns: 25% 40%;
+  grid-template-columns: 50% 50%;
+}
+#topbarLeft div{
+padding-right: 50%;
+display: flex;
+
+}
+
+#topbarRight{
+  display: flex;
+  justify-content: right;
+
 }
 
 #topbar h2{
@@ -114,9 +130,7 @@ export default {
 .toggleSectionActive h2{
   color: #3CB4FB;
 }
-#topGrid div{
-  display: flex;
-}
+
 #mainbodyGrid{
   display: grid;
   grid-template-columns: 40% 25% 20%; 

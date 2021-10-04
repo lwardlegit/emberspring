@@ -3,11 +3,16 @@
     <div id="col1">
       <div id="mainHeader">
         <h3>
-         Influential Design  
+         Influential Design 
+         <h5>Exponential development</h5>
       </h3>
-      <p id="arrow">-></p>
-         <h3> Exponential development</h3>
         </div>
+
+    <div id="introParagraph">
+      Small tech startups, dreamers and established businesses alike
+      leverage our team's expertise to maintain grow and scale their applications
+      seamlessly to suit any customer needs
+    </div>
       
 
 
@@ -17,9 +22,11 @@
       <div  id="phoneImg">
         <div id="innerPhone">
           <div id="phoneHeaderDiv">
+            <div>
               <p>How</p> 
               <p>About</p>
               <p>This</p>
+            </div>
             </div>
 
           <div id="phoneContentDiv" class="blocked">
@@ -67,7 +74,7 @@
 
     <a id="consultation" href="https://www.fiverr.com/share/NE6Dp8">Schedule Now</a>
 
-    <b><p id="wireframesDiv">WireFrames</p></b>
+    <b><p id="portfolio">Our Work</p></b>
     <div>
       <img class="wireframes" @click="changeSource" src="../assets/wireframe1.png"/>
     </div>
@@ -89,8 +96,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#mainHeader{
-  font-size: 6em;
+#mainHeader {
+  font-size: 5em;
+  line-height: 1;
+  height:40%;
+}
+#introParagraph{
+  text-align: left;
+  width: 60%;
+  font-size: 18px;
+  color: rgb(63, 61, 61);
+  line-height: 1.5em;
 }
 .blocked{
   display: block;
@@ -115,13 +131,12 @@ a {
 }
 #col1{
   background-image: url('../assets/logofinal.png');
+ 
 }
-#col2{
-  padding-right: 1em;
-}
+
 #phoneImg{
   margin-top: 2em;
-  margin-right: 1em;
+  margin-left: 1em;
   border-radius: 10px;
   width: 300px;
   height: 520px;
@@ -135,14 +150,33 @@ a {
   border-radius: 8px;
 }
 #phoneHeaderDiv{
- background-color: rgba(255, 102, 0, 0.719);
-  display: flex;
-  justify-content: space-between;
+ background-color:#FF9148;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 4.2em;
 }
-#phoneHeaderDiv p{
-  color: white;
-  margin: 1em;
+#phoneHeaderDiv div{
+margin: 0 auto;
+display: flex;
+justify-content: space-evenly;
+width: 90%;
+color: white;
 }
+
+#phoneHeaderDiv div p{
+padding: .5em 1em .5em 1em;
+background-color: #fa721842;
+border-radius: 15px;
+}
+#phoneHeaderDiv div p:hover{
+padding: .5em 1em .5em 1em;
+background-color: rgba(255, 166, 0, 0.548);
+border-radius: 15px;
+cursor:pointer;
+box-shadow: 10px 5px 5px rgb(255, 94, 0);
+border: .2px solid rgba(128, 128, 128, 0.233);
+}
+
 #phoneContentDiv{
   width: 90%;
   margin: 0 auto;
@@ -201,8 +235,9 @@ border: 2px solid #70C4F6;
 cursor:pointer;
 
 }
-#wireframesDiv{
+#portfolio{
   margin-top: 3em;
+
 }
 
 </style>

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import DesignPage from '../views/Designs.vue'
+import WireframePage from '../views/Wireframes.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/designs',
     name: 'wireframes',
-    component: DesignPage
+    component: WireframePage
   },
   
 ]
